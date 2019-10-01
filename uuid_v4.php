@@ -1,4 +1,8 @@
-// Generate UUID v4
+<?php
+/**
+* Generar UUID v4
+* @return string UUID v4
+*/
 function generateUuidv4()
 {
     return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
@@ -17,4 +21,5 @@ function generateUuidv4()
     mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff)
     );
 }
+
 echo generateUuidv4();
